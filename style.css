@@ -272,37 +272,69 @@ nav ul li a:hover {
     background-color: #FFFFFF; /* White */
 }
 
-.contact-section h2 {
+/* New: Styling for the main section title */
+.section-title {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #002147; /* Dark Blue */
+    color: #002147; /* Dark Blue from Logo */
 }
 
-.contact-details {
+/* New: Grid for contact cards */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+    gap: 30px; /* Space between cards */
+    margin-bottom: 40px; /* Space before the map/form */
+    justify-content: center; /* Center the grid items if there are fewer than a full row */
+}
+
+/* New: Styling for individual contact cards */
+.contact-card {
     text-align: center;
-    margin-bottom: 40px;
+    background-color: #f9f9f9; /* Slightly off-white background for each card */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-details p {
-    font-size: 1.1em;
-    margin: 10px 0;
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-.contact-details i {
-    color: #FF6700; /* Orange for icons */
-    margin-right: 10px;
-    font-size: 1.2em;
+/* New: Styling for large icons within cards */
+.icon-large {
+    color: #FF6700; /* Orange from Logo */
+    font-size: 3em; /* Larger icon size */
+    margin-bottom: 15px;
+    display: block; /* Ensures icon is on its own line and centers */
 }
 
-.contact-details a {
+.contact-card h3 {
+    font-size: 1.4em;
+    color: #002147; /* Dark Blue */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contact-card p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-card a {
     color: #002147; /* Dark Blue */
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.contact-details a:hover {
-    text-decoration: underline;
+.contact-card a:hover {
     color: #FF6700; /* Orange on hover */
+    text-decoration: underline;
 }
 
 .contact-map {
@@ -469,9 +501,11 @@ footer {
         font-size: 1em;
     }
 
+    /* Updated: section-title for responsiveness */
     .properties-section h2,
     .about-section h2,
-    .contact-section h2 {
+    .contact-section h2,
+    .section-title { /* Added .section-title here */
         font-size: 2em;
     }
 
@@ -491,6 +525,11 @@ footer {
 
     .modal-content h3 {
         font-size: 1.5em;
+    }
+
+    /* New: Contact grid responsive for small screens */
+    .contact-info-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
     }
 }
 
