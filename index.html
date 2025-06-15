@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prasad Realty - Your Trusted Real Estate Partner</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght=500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -29,15 +29,17 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h2>Your Dream Property Awaits in Visakhapatnam</h2>
-                <p>Connecting you with the best Flats, Plots, and Farm Lands across Visakhapatnam and surrounding areas.</p>
-                <a href="#properties" class="btn">Explore Properties</a>
+                <div class="hero-content">
+                    <h2>Discover Your Perfect Home in Visakhapatnam</h2>
+                    <p>Connecting aspirations with reality – your trusted guide to prime Flats, Plots, and Farm Lands in Vizag.</p>
+                    <a href="#properties" class="btn primary-btn">Explore Properties</a>
+                </div>
             </div>
         </section>
 
-        <section id="properties" class="properties-section">
+        <section id="properties" class="properties-section section-bg-light">
             <div class="container">
-                <h2>Our Latest Listings</h2>
+                <h2 class="section-title">Our Exclusive Listings</h2>
                 <div class="filters">
                     <button class="filter-btn active" data-category="all">All Properties</button>
                     <button class="filter-btn" data-category="flat">Flats</button>
@@ -51,7 +53,7 @@
 
         <section id="about" class="about-section">
             <div class="container">
-                <h2>About Prasad Realty</h2>
+                <h2 class="section-title">About Prasad Realty</h2>
                 <div class="about-content">
                     <div class="about-text">
                         <p>Welcome to **Prasad Realty**, your trusted partner in navigating the dynamic real estate landscape of Visakhapatnam. Founded by **Chalamkuri V.S.S Prasad**, our firm is built on principles of transparency, integrity, and a deep understanding of the local market.</p>
@@ -59,43 +61,70 @@
                         <p>At Prasad Realty, we are committed to providing personalized service, ensuring every client's real estate journey is seamless and successful. Whether you are looking to buy, sell, or invest, we are here to guide you every step of the way.</p>
                     </div>
                     <div class="about-image">
-                        <img src="https://via.placeholder.com/400x300?text=About+Us+Image" alt="About Prasad Realty">
+                        <img src="https://via.placeholder.com/600x400/95A5A6/ECF0F1?text=Dedicated+Team" alt="About Prasad Realty Team">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section section-bg-light">
             <div class="container">
-                <h2>Contact Us</h2>
-                <div class="contact-details">
-                    <p><i class="fas fa-user"></i> **Owner:** Chalamkuri V.S.S Prasad</p>
-                    <p><i class="fas fa-phone-alt"></i> **Call Us:** <a href="tel:+916309729493">+91 6309729493</a></p>
-                    <p><i class="fas fa-envelope"></i> **Email:** <a href="mailto:kdr.prasad2@gmail.com">kdr.prasad2@gmail.com</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i> **Office Address:** South Jail Road, Visakhapatnam, Pin Code - 530020</p>
-                    <p><i class="fab fa-instagram"></i> **Instagram:** <a href="https://www.instagram.com/prasad.realty_vizag/" target="_blank">@prasad.realty_vizag</a></p>
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-user icon-large"></i>
+                        <h3>Owner</h3>
+                        <p>Chalamkuri V.S.S Prasad</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt icon-large"></i>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+916309729493">+91 6309729493</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope icon-large"></i>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:kdr.prasad2@gmail.com">kdr.prasad2@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt icon-large"></i>
+                        <h3>Our Office</h3>
+                        <p>South Jail Road, Visakhapatnam, Pin Code - 530020</p>
+                    </div>
                 </div>
                 <div class="contact-map">
-                    <h3>Find Us on Map</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.228570535182!2d83.30397507421162!3d17.71261318357774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b0722253805%3A0x6b801a61e05d2c70!2sSouth%20Jail%20Rd%2C%20Jagadamba%20Junction%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530020!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <h3>Locate Us</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.748375618489!2d83.28470007504368!3d17.72895628318359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2c206d09d3b3c3%3A0x6b8d4f4f7d4d7a8d!2sSouth%20Jail%20Rd%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530020!5e0!3m2!1sen!2sin!4v1718501250379!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contact-form">
                     <h3>Send Us a Message</h3>
                     <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Your Phone Number" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
                     </form>
                 </div>
+                <div class="social-links">
+                    <p>Connect with us:</p>
+                    <a href="https://www.instagram.com/prasad.realty_vizag/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Prasad Realty. All rights reserved.</p>
+            <p>&copy; <span id="currentYear"></span> Prasad Realty. All rights reserved.</p>
         </div>
     </footer>
 
@@ -103,21 +132,21 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h3 id="modalPropertyName"></h3>
-            <div class="modal-image">
+            <div class="modal-image-carousel">
                 <img id="modalPropertyImage" src="" alt="Property Image">
-            </div>
-            <div class="modal-details">
+                </div>
+            <div class="modal-details-grid">
                 <p><strong>Availability:</strong> <span id="modalPropertyAvailability"></span></p>
                 <p><strong>Size:</strong> <span id="modalPropertySize"></span></p>
                 <p><strong>Facing:</strong> <span id="modalPropertyFacing"></span></p>
                 <p><strong>Price:</strong> <span id="modalPropertyPrice"></span></p>
                 <p><strong>Total Price:</strong> <span id="modalPropertyTotalPrice"></span></p>
-                <p><strong>Address:</strong> <span id="modalPropertyAddress"></span></p>
+                <p class="full-width-detail"><strong>Address:</strong> <span id="modalPropertyAddress"></span></p>
                 <p><strong>Contact Person:</strong> <span id="modalPropertyContactPOC"></span></p>
                 <p><strong>Contact Number:</strong> <span id="modalPropertyContactNumber"></span></p>
-                <p><strong>Details:</strong> <span id="modalPropertyDetails"></span></p>
-                <div id="modalPropertyNotes"></div>
-                <div id="modalPropertyLinks"></div>
+                <p class="full-width-detail"><strong>Details:</strong> <span id="modalPropertyDetails"></span></p>
+                <div id="modalPropertyNotes" class="full-width-detail"></div>
+                <div id="modalPropertyLinks" class="full-width-detail property-links"></div>
             </div>
             <div class="modal-map">
                 <h4>Location on Map:</h4>
