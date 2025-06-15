@@ -1,0 +1,507 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #004d40; /* Dark Teal */
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #80cbc4; /* Lighter Teal */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500x600/00796b/ffffff?text=Visakhapatnam+Skyline') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Overlay for readability */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9800; /* Orange */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fb8c00; /* Darker Orange */
+}
+
+/* Properties Section */
+.properties-section {
+    padding: 60px 0;
+    background-color: #fcfcfc;
+}
+
+.properties-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #004d40;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #bdbdbd;
+}
+
+.filter-btn.active {
+    background-color: #00796b; /* Green Teal */
+    color: #fff;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.property-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.property-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-info h3 {
+    margin-top: 0;
+    color: #004d40;
+    font-size: 1.5em;
+    min-height: 3em; /* Ensure consistent card height for titles */
+}
+
+.property-info p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.property-info .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 10px;
+}
+
+.property-info .btn {
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    background-color: #e8f5e9; /* Light Green */
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #004d40;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #004d40;
+}
+
+.contact-details {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.contact-details i {
+    color: #00796b;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.contact-details a {
+    color: #004d40;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-map {
+    margin-bottom: 40px;
+}
+
+.contact-map h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.contact-map iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #004d40;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #00332e; /* Even darker teal */
+    color: #a7d9d2;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%; /* Could be more responsive */
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h3 {
+    color: #004d40;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-details p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.modal-details strong {
+    color: #00796b;
+}
+
+.modal-map {
+    margin-top: 30px;
+}
+
+.modal-map h4 {
+    color: #004d40;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .properties-section h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .modal-content h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    .filter-btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
